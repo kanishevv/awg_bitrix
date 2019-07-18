@@ -9,6 +9,7 @@ use CPrice;
 class Version20190718001007 extends Version
 {
 
+    // not in migraton, its fixture
     protected $description = "Создание элементов инфоблока";
 
     public function up()
