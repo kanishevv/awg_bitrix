@@ -18,8 +18,8 @@ class Version20190717231448 extends Version
         $priceId = CCatalogGroup::Add([
             "BASE" => "Y",
             "NAME" => "retail",
-            "USER_GROUP" => [1],
-            "USER_GROUP_BUY" => [2], 
+            "USER_GROUP" => [1], // hardcode
+            "USER_GROUP_BUY" => [2], // hardcode
             "USER_LANG" => [
                 "ru" => "Розничная1",
                 "en" => "Retail"  

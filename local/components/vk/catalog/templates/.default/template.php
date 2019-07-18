@@ -12,7 +12,8 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 
-$this->addExternalCss("styles.css");
+$this->addExternalCss("styles.css"); // what for?
+//no prices
 ?>
 
 <div class="products">

@@ -1,7 +1,9 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
+// cache?
+
 if (\Bitrix\Main\Loader::IncludeModule("iblock")) {
-    $arSelect = ["*"];
+    $arSelect = ["*"]; // all?
     $arFilter = ["IBLOCK_ID" => $arParams["IBLOCK_ID"], "ACTIVE_DATE" => "Y", "ACTIVE" => "Y"];
     $arNavStartParams = ["nPageSize" => $arParams["PAGE_ELEMENT_COUNT"]];
     
@@ -14,4 +16,5 @@ if (\Bitrix\Main\Loader::IncludeModule("iblock")) {
     }
 }
 
+// if not loaded model template included?
 $this->IncludeComponentTemplate();
